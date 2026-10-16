@@ -11,7 +11,8 @@
 
 \header {
   title = "Yah Ribon `Alam"
-  subtitle = "Transcription of Yair Dalal's performance"
+  subtitle = "Transcribed from a recording of a performance by Yair Dalal"
+  poet = "poem byR. Israel Najara (1555-1625)"
 }
 
 \score {
