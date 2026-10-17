@@ -11,8 +11,8 @@
 
 \header {
   title = "Yah Ribon `Alam"
-  subtitle = "Transcribed from a recording of a performance by Yair Dalal"
-  poet = "poem byR. Israel Najara (1555-1625)"
+  piece = "from a recorded performance by Yair Dalal"
+  poet = "poem by R. Israel Najara (1555-1625)"
 }
 
 \score {
@@ -45,20 +45,18 @@
       \break
 
       % Bar 5
-      eqf2( \acciaccatura { f16 } eqf8
-      \glissando c8) r4 |
+      f2( f4
+      \glissando d4) |
 
       % Bar 6
       eqf2( \acciaccatura { f16 } eqf8
       \glissando c8) r4 |
 
       % Bar 7
-      eqf2( \acciaccatura { f16 } eqf8
-      \glissando c8) r4 |
+      c4 d eqf d |
 
       % Bar 8
-      eqf2( \acciaccatura { f16 } eqf8
-      \glissando c8) r4 \bar "|."
+      c4 r2. |
     }
   }
 
