@@ -11,7 +11,7 @@
 
 \header {
   title = "Yah Ribon `Alam"
-  piece = "from a recorded performance by Yair Dalal"
+  piece = "transcribedfrom a recorded performance by Yair Dalal"
   poet = "poem by R. Israel Najara (1555-1625)"
 }
 
@@ -27,9 +27,10 @@
           \tempo 4 = 120
 
           % Portamento line appearance
-          \override Glissando.style = #'dashed-line
+          % \override Glissando.style = #'dashed-line
+          \override Glissando.style = #'trill
           \override Glissando.bound-details.left.padding = #0.5
-          \override Glissando.bound-details.right.padding = #0.5
+          \override Glissando.bound-details.right.padding = #0.1
 
           % Bar 1
           c4.( d8) c4 d4 |
@@ -44,8 +45,14 @@
           } |
 
           % Bar 4
-          eqf2 \acciaccatura { f16 }( eqf8
-          \glissando c8) r4 |
+          % eqf2 \acciaccatura { f16 }( eqf8
+          % \glissando c8) r4 |
+          % \break
+          eqf2 
+          \tuplet 3/2 {
+            eqf8( d8 c8) 
+          }
+          r4
           \break
 
           % Bar 5
@@ -55,8 +62,13 @@
           } |
 
           % Bar 6
-          eqf2 \acciaccatura { f16 }( eqf8
-          \glissando c8) r4 |
+                    eqf2 
+          \tuplet 3/2 {
+            eqf8( d8 c8) 
+          }
+          r4
+          % eqf2 \acciaccatura { f16 }( eqf8
+          % \glissando c8) r4 |
 
           % Bar 7
           c4 d eqf d |
@@ -64,38 +76,76 @@
           % Bar 8
           c4 r2. |
           \break
+
           % Bar 9
-          c4.( d8) c4 d4 |
+          f8 f8 f2 g4 |
 
           % Bar 10
-          eqf8( f8 d8 eqf8) c2 |
+          f4 eqf2\mordent r4
 
           % Bar 11
-          f2~
-          \tuplet 3/2 {
-            f2 \glissando d4
-          } |
+          f2 g4 f4 |
 
           % Bar 12
-          eqf2 \acciaccatura { f16 }( eqf8
-          \glissando c8) r4 |
+          eqf2\mordent r2 |
+          
           \break
 
           % Bar 13
+          eqf4 f2 g4 |
+
+          % Bar 14
+          f4 eqf2 d4  |
+
+          % Bar 15
+          c4( d2) d4 |
+
+          % Bar 16
+          g4 g8( f8 eqf8 d8 c4) |
+          \break
+
+          % Bar 17
+          c4.( d8) c4 d4 |
+
+          % Bar 18
+          eqf8( f8 d8 eqf8) c2 |
+
+          % Bar 19
+          f2~
+          \tuplet 3/2 {
+            f2^\markup { \italic "port." } \glissando d4
+          } |
+
+          % Bar 20
+          eqf2 
+          \tuplet 3/2 {
+            eqf8( d8 c8) 
+          }
+          r4
+          \break
+
+          % Bar 21
           f2~
           \tuplet 3/2 {
             f2 \glissando d4
           } |
 
-          % Bar 14
-          eqf2 \acciaccatura { f16 }( eqf8
-          \glissando c8) r4 |
+          % Bar 22
+                    eqf2 
+          \tuplet 3/2 {
+            eqf8( d8 c8) 
+          }
+          r4
+          % eqf2 \acciaccatura { f16 }( eqf8
+          % \glissando c8) r4 |
 
-          % Bar 15
+          % Bar 23
           c4 d eqf d |
 
-          % Bar 16
+          % Bar 24
           c4 r2. |
+          \break
+
         }
       }
     }
@@ -104,15 +154,21 @@
       % Add the syllables here, separated by spaces.
 
       % System 1
-      Yah ri- bon a- lam we al- ma- ya
+      Yah ri- bon ʿa- lam we ʿal- ma- ya
       
       % System 2
       Ant hu mal- ka me- lekh mal- kha- ya
 
       % System 3
-      Yah ri- bon a- lam we al- ma- ya
+      ՙO- va- dei ge- vur- takh we- tim- ha- ya
       
       % System 4
+      She- far- ko- da- mai le- ha- ha- va- ya
+
+      %System 5
+      Yah ri- bon ʿa- lam we ʿal- ma- ya
+      
+      % System 2
       Ant hu mal- ka me- lekh mal- kha- ya
 
     }
