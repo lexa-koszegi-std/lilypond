@@ -12,8 +12,10 @@
 
 \header {
   title = "Yah Ribon ՙAlam"
-  poet = \markup { \fontsize #-2 "Piyyut by R. Israel Najara (1555-1625)" }
+  % misusing header fields until I can figure out how to code custom ones in Lilypond
+  composer = \markup { \fontsize #-2 "Piyyut by R. Israel Najara (1555-1625)" }
   piece = \markup { \fontsize #-2 "Performance by Yair Dalal transcribed by Lexa Koszegi" }
+  poet = \markup { \fontsize #-2 "Maqam: Rast on C" }
 }
 
 \score {
@@ -164,7 +166,7 @@
       ՙO- va- dei ge- vur- takh we- tim- ha- ya
       
       % System 4
-      She- far- ko- da- mai le- ha- ha- va- ya
+      She- far- ko- da- mai le- ha- ha- wa- ya
 
       %System 5
       Yah ri- bon ʿa- lam we ʿal- ma- ya
@@ -199,5 +201,8 @@
       rather than the more modern pronunciations you'd find in printed sources of the Piyyut.
     }
     \vspace #1
+    \justify {
+      Code repository: https://github.com/lexa-koszegi-std/lilypond-musical-scores
+    }
   }
 }
