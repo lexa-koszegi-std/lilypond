@@ -198,7 +198,7 @@
     \vspace #1
     \justify {
       Lyrics transcription is my own interpretation of how I heard it sung in Dalal's Judeo-Iraqi pronunciation
-      rather than the more modern pronunciations you'd find in printed sources of the Piyyut.
+      rather than the more common pronunciations you'd find in most printed sources.
     }
     \vspace #1
     \justify {
