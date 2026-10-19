@@ -30,8 +30,9 @@
           \tempo 4 = 120
 
           % Portamento line appearance
+          \override Glissando.style = #'line
           % \override Glissando.style = #'dashed-line
-          \override Glissando.style = #'trill
+          % \override Glissando.style = #'trill
           \override Glissando.bound-details.left.padding = #0.5
           \override Glissando.bound-details.right.padding = #0.1
 
