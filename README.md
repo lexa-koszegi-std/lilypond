@@ -1,4 +1,4 @@
-# lilypond
+# lilypond-musical-scores
 
 This repo is for the scores I transcribe using LilyPond format. For more info about LilyPond, see https://lilypond.org/doc/v2.23/Documentation/web/index
 
