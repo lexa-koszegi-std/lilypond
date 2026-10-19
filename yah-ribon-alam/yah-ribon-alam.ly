@@ -7,12 +7,13 @@
   indent = 0\mm
   ragged-right = ##f
   ragged-last = ##f
+  system-system-spacing.basic-distance = 15
 }
 
 \header {
-  title = "Yah Ribon `Alam"
-  piece = "transcribedfrom a recorded performance by Yair Dalal"
-  poet = "poem by R. Israel Najara (1555-1625)"
+  title = "Yah Ribon ՙAlam"
+  poet = \markup { \fontsize #-2 "Piyyut by R. Israel Najara (1555-1625)" }
+  piece = \markup { \fontsize #-2 "Performance by Yair Dalal transcribed by Lexa Koszegi" }
 }
 
 \score {
@@ -176,4 +177,27 @@
 
   \layout {}
   \midi {}
+}
+
+\markup {
+  \fontsize #-1
+  \column {
+    \vspace #1
+    \justify {
+      STUDENT NOTES: This is draft of an excerpt of the recording starting at 0:41.79 and ending at 1:29.12.
+      I started at this point in order to capture the melody of the basic chorus and the first verse.
+    }
+    \vspace #1
+    \justify {
+      Next steps will be to add staves for the oud accompaniment so I can transcribe the introduction, which is
+      played in a slower, 3-beat rhythm and then switches to a faster 4 beat rhythm oud intro before the the first
+      chorus is sung. 
+    }
+    \vspace #1
+    \justify {
+      Lyrics transcription is my own interpretation of how I heard it sung in Dalal's Judeo-Iraqi pronunciation
+      rather than the more modern pronunciations you'd find in printed sources of the Piyyut.
+    }
+    \vspace #1
+  }
 }
